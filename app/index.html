@@ -44,24 +44,19 @@
   </section>
 
   <section class="row" id="reviews">
-    <div class="col l5 offset-l1">
-      <h2>Reviews</h2>
-      <div class="col l12">
-        Awesome
-      </div>
-      <div class="col l12">
-        Great
-      </div>
-      <div class="col l12">
-        Wow!
-      </div>
-    </div>
-    <div class="col l6" id="book-img">
+    <h1 class="headings col l11 offset-l1 m11 offset-m1 s12">Reviews</h1>
+    <div class="col l4 offset-l1 m4 offset-m1 s12" id="book-img">
       <img src="./images/book.png" alt="" class="responsive-img">
+    </div>
+    <div class="col l4 m6 offset-l1 z-depth-1" id="reviews-pane">
+      <p><i class="fa fa-quote-right" aria-hidden="true"></i><p>
+      <ul id="reviewsContainer">
+        <!--reviews template-->
+      </ul>
     </div>
   </section>
 
-  <section class="row">
+  <section class="row" id="come-look">
     <h2 class="black white-text">Come take a look behind the red door</h2>
   </section>
 
@@ -118,6 +113,26 @@
             </div>
           </div>
         </footer>
+        <!--Handlebars-->
+      <script id="reviewsTemplate" type="text/x-handlebars-template">
+      {{#data}}
+          <li class="N/A transparent">
+            <!-- Modal Trigger -->
+            <a data-target={{id}} ><div class="">
+              <div class="card-panel z-depth-0 N/A transparent">
+                <p class="secondary-text" id="review-snippet">"{{snippet}}..."</p>
+              </div>
+            </div></a>
+           <div id={{id}} class="modal bottom-sheet">
+             <div class="modal-content">
+               <p class="secondary-text">{{review}}</p>
+               <p class="secondary-text reviewer">~{{reviewer}}</p>
+               <p class="secondary-text reviewer">{{position}}</p>
+             </div>
+           </div>
+          </li>
+      {{/data}}
+      </script>
 
 
 
