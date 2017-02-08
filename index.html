@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Raleway" rel="stylesheet">
   </head>
   <body>
 
 
   <nav>
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Logo</a>
+      <a href="#!" class="brand-logo"><span id="logo1">behind the </span><span id="logo2">red door</span></a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="sass.html">Sass</a></li>
@@ -32,41 +33,100 @@
   </nav>
   <section class="parallax-container" id="parallax">
     <div class="parallax"><img src="./images/IMG_0213_Blur_parallax.jpeg"></div>
-    <div class="col l12">
-      <h2 class="red white-text darken-4">Red Door</h2>
-      <h3 class="black white-text darken-4">Unlock your advocacy</h3>
+    <div class="row" id="header-title">
+      <span class="white-text" id="top-title">behind the</span>
+      <h2 id="middle-title">Red Door</h2>
+      <div id="subtitles">
+        <div id="bottom-title1">unlock your advocacy</div>
+        <div id="bottom-title2">influence and success</div>
+      </div>
+      <img src="./images/Karen_B_Moore_SignatureLogo_NoTagline.png" alt="" height="150" id="signature">
     </div>
   </section>
 
-  <section class="row">
-    <div class="col l12">
-      <h2>Reviews</h2>
-      <div class="col 4">
-        Awesome
-      </div>
-      <div class="col 4">
-        Great
-      </div>
-      <div class="col 4">
-        Wow!
-      </div>
+  <section class="row" id="reviews">
+    <h1 class="headings col l11 offset-l1 m11 offset-m1 s12">Reviews</h1>
+    <div class="col l4 offset-l1 m4 offset-m1 s12" id="book-img">
+      <img src="./images/book.png" alt="" class="responsive-img">
+    </div>
+    <div class="col l4 m6 offset-l1 z-depth-1" id="reviews-pane">
+      <p><i class="fa fa-quote-right" aria-hidden="true"></i><p>
+      <ul id="reviewsContainer">
+        <!--reviews template-->
+      </ul>
     </div>
   </section>
 
-  <section class="row">
-    <h2>Come take a look behind the red door</h2>
-  </section>
+  <section class="parallax-container" id="come-look">
+     <div class="parallax"><img src="./images/reddoor-parallax.jpg"></div>
+     <div class="row" id="call-to-action">
+       <h2>Come take a look behind the red door</h2>
+     </div>
+   </section>
 
-  <section class="row">
-    <div class="col l12">
-      about the red door
+
+  <section class="row" id="about-book">
+    <h2 class="headings col l10 offset-l1 m10 offset-m1">About the book</h2>
+    <div class="col l5 offset-l1 m5 offset-m1">
+      <p class="primary-text">In feng shui, a red door signifies “welcome,” a place where energy enters. The color red means energy and strength, power and passion. It means action and is often a differentiator. When you take that strength and passion, and incorporate it into a strategic-advocacy engagement, you can create action for your organization.
+      <blockquote>
+        Enjoy a complimentary chapter from my recent book, Behind the Red Door:  Unlock Your Advocacy Influence and Success when you fill out the form.   Begin to understand why advocacy is such a vital tool for your organization, regardless of your industry.
+      </blockquote>
+      <p class="primary-text">These “red-door” strategies which I share in my new book, Behind the Red Door:  Unlock Your Advocacy Influence and Success, are the tools and tactics needed to help you create effective advocacy efforts.  So enter and see what kind of success awaits you behind the red door of advocacy.
+    </div>
+    <div class="col l4 offset-l1 m4 offset-m1" id="about-book-img">
     </div>
   </section>
 
-  <section class="row">
-    <div class="col l4">Advocacy</div>
-    <div class="col l4">Leverage</div>
-    <div class="col l4">Leads</div>
+  <section class="row" id="strategy">
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="./images/IMG_0100.jpg"> <!-- random image -->
+          <div class="caption center-align">
+            <h2 class="headings">Advocacy</h2>
+            <h4 class="light grey-text text-lighten-3">The differentiator.</h4>
+          </div>
+        </li>
+        <li>
+          <img src="./images/KBM-kaymphoto-80.jpg "> <!-- random image -->
+          <div class="caption left-align">
+            <h2 class="headings">Influence</h2>
+            <h4 class="light grey-text text-lighten-3">Making a mark on the world.</h4>
+          </div>
+        </li>
+        <li>
+          <img src="./images/IMG_0213_Blur_parallax.jpeg"> <!-- random image -->
+          <div class="caption right-align">
+            <h2 class="headings">Success</h2>
+            <h4 class="light grey-text text-lighten-3">Through effective strategy.</h4>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col l10 offset-l1" id="strategy-pane">
+      <div class="row">
+        <div class="col l4">
+          <h6 class="headings">Advocacy: More Than a Tool on “The Hill”</h6>
+          <p class="secondary-text">
+            Advocacy is no longer just a tactic used in political campaigns; we’ve moved beyond “pass a bill; kill a bill.” So what does that mean?
+            Today, it is about solving issues and affecting change – inspiring collaboration between nontraditional allies who, even though they may not agree on everything, are coming together to accomplish mutually beneficial goals.  It’s highlighting issues and supporting causes; it’s integrating advocacy tactics with marketing strategies designed to influence decision makers and to change local, state, and federal policy and practice. That’s the differentiator.
+          </p>
+        </div>
+        <div class="col l4">
+          <h6 class="headings">Leveraging a New Set of Tools and Strategies</h6>
+          <p class="secondary-text">
+            In my twenty years of experience developing advocacy campaigns and working with organizations, ranging from not-for-profits to Fortune 500 companies, we’ve seen emerging trends that are shaping today’s advocacy landscape.  Advocacy should be a required asset for any organization trying to make its mark on the world. Done well, advocacy can further your organization’s efforts to achieve its goals and objectives – making it an essential resource in every toolbox.
+          </p>
+        </div>
+        <div class="col l4">
+          <h6 class="headings">Behind the Red Door:  Unlock Your Advocacy Influence and Success</h6>
+          <p class="secondary-text">
+            Whether you run a small not-for-profit organization or are the VP of a corporation, this book will help you understand how advocacy can be an effective strategy to add to your toolbox and help you prepare an advocacy plan that moves your target audiences into meaningful action.  Behind the Red Door walks you through a comprehensive look at advocacy including building an advocacy-plan framework, creating and utilizing a brand, building and mobilizing internal and external stakeholders, using social media, dealing with crisis communications, and finally, measuring results.
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="parallax-container" id="parallax">
@@ -110,6 +170,26 @@
             </div>
           </div>
         </footer>
+        <!--Handlebars-->
+      <script id="reviewsTemplate" type="text/x-handlebars-template">
+      {{#data}}
+          <li class="N/A transparent">
+            <!-- Modal Trigger -->
+            <a data-target={{id}} ><div class="">
+              <div class="card-panel z-depth-0 N/A transparent">
+                <p class="secondary-text" id="review-snippet">"{{snippet}}..."</p>
+              </div>
+            </div></a>
+           <div id={{id}} class="modal bottom-sheet">
+             <div class="modal-content">
+               <p class="secondary-text">{{review}}</p>
+               <p class="secondary-text reviewer">~{{reviewer}}</p>
+               <p class="secondary-text reviewer">{{position}}</p>
+             </div>
+           </div>
+          </li>
+      {{/data}}
+      </script>
 
 
 

@@ -5763,7 +5763,153 @@ button.close {
 *::after {
   box-sizing: border-box; }
 
+.headings {
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
+  color: #BB1E24;
+  text-shadow: 1px 1px 4px rgba(8, 8, 8, 0.19); }
+
+.row {
+  margin-bottom: -20px; }
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px; }
+
+.primary-text {
+  line-height: 2;
+  opacity: .87;
+  font-size: 120%; }
+
+.secondary-text {
+  line-height: 1.5;
+  opacity: .54;
+  font-size: 110%; }
+
+a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: #BB1E24; }
+
+.nav-wrapper {
+  background-color: #000; }
+  .nav-wrapper a {
+    color: #fff; }
+  .nav-wrapper .brand-logo #logo1 {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px; }
+  .nav-wrapper .brand-logo #logo2 {
+    color: #BB1E24;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif; }
+
 #parallax {
-  height: 600px; }
+  height: 650px;
+  position: relative; }
+  #parallax #header-title {
+    position: absolute;
+    bottom: 15%;
+    left: 60%;
+    width: 100%;
+    text-transform: uppercase; }
+    #parallax #header-title #top-title {
+      position: relative;
+      top: 20px;
+      color: white;
+      font-size: 35px;
+      text-transform: none;
+      font-family: 'Raleway', sans-serif;
+      text-shadow: 1px 1px 4px rgba(8, 8, 8, 0.19); }
+    #parallax #header-title #middle-title {
+      color: #BB1E24;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 90px;
+      font-family: 'Fjalla One', sans-serif; }
+    #parallax #header-title #subtitles {
+      position: relative;
+      bottom: 20px;
+      font-family: 'Raleway', sans-serif;
+      z-index: 0; }
+      #parallax #header-title #subtitles #bottom-title1 {
+        color: white;
+        font-size: 25px; }
+      #parallax #header-title #subtitles #bottom-title2 {
+        color: white;
+        font-size: 20px; }
+    #parallax #header-title #signature {
+      position: relative;
+      bottom: 90px;
+      z-index: 1; }
+
+#reviews {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  #reviews #reviews-pane {
+    background-color: #fbfbfb; }
+    #reviews #reviews-pane a {
+      color: #000; }
+    #reviews #reviews-pane p {
+      text-align: center; }
+    #reviews #reviews-pane .fa {
+      font-size: 35px;
+      color: rgba(187, 30, 36, 0.75);
+      position: relative;
+      bottom: 15px;
+      text-shadow: 1px 1px 4px rgba(8, 8, 8, 0.19); }
+    #reviews #reviews-pane #review-snippet {
+      text-align: center; }
+    #reviews #reviews-pane .reviewer {
+      font-weight: bold;
+      text-align: right; }
+    #reviews #reviews-pane #book-img img {
+      height: 500px;
+      width: 300px;
+      background-size: cover;
+      background-repeat: none; }
+
+#come-look {
+  position: relative; }
+  #come-look img {
+    -webkit-filter: contrast(0.6) brightness(0.5) blur(1px);
+            filter: contrast(0.6) brightness(0.5) blur(1px); }
+  #come-look #call-to-action {
+    position: absolute;
+    bottom: 35%;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Raleway', sans-serif; }
+    #come-look #call-to-action h2 {
+      text-align: center; }
+
+#about-book {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+  #about-book #about-book-img {
+    background-image: url("../images/K-Moore-With-Book.jpg");
+    height: 500px;
+    background-size: cover;
+    background-position: center; }
+
+#strategy {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+  #strategy .slider {
+    z-index: 0; }
+  #strategy #strategy-pane {
+    position: relative;
+    bottom: 80px;
+    background-color: white;
+    z-index: 1; }
+    #strategy #strategy-pane .row {
+      margin-top: 50px; }
+    #strategy #strategy-pane h6 {
+      margin-bottom: 30px; }
+  #strategy h4 {
+    text-shadow: 1px 1px 4px rgba(8, 8, 8, 0.19); }
 
 /*# sourceMappingURL=app.css.map */
