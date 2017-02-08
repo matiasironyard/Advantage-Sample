@@ -76,7 +76,7 @@ a:hover{
   position: relative;
   #header-title{
     position: absolute;
-    bottom: 35%;
+    bottom: 15%;
     left: 60%;
     width: 100%;
     text-transform: uppercase;
@@ -100,6 +100,7 @@ a:hover{
       position: relative;
       bottom: 20px;
       font-family: 'Raleway', sans-serif;
+      z-index: 0;
       #bottom-title1{
         color: white;
         font-size: 25px;
@@ -109,12 +110,18 @@ a:hover{
         font-size: 20px;
       }
     }
+    #signature{
+      position: relative;
+      bottom: 90px;
+      z-index: 1;
+    }
   }
 }
 
 //##########REVIEWS############//
 #reviews{
   margin-top: 50px;
+  margin-bottom: 50px;
   #reviews-pane{
     background-color: rgb(251, 251, 251);
     a{
@@ -146,5 +153,37 @@ a:hover{
         background-repeat: none;
       }
     }
+  }
+}
+
+//#########COME LOOK##########//
+#come-look{
+  position: relative;
+  img{
+    filter: contrast(.6) brightness(.5) blur(1px);
+  }
+  #call-to-action{
+    position: absolute;
+    bottom: 35%;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    h2{
+      text-align: center;
+    }
+  }
+}
+
+//########ABOUT BOOK###########//
+#about-book{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  #about-book-img{
+    background-image: url('../images/K-Moore-With-Book.jpg');
+    height: 450px;
+    background-size: cover;
+    background-position: center;
   }
 }
