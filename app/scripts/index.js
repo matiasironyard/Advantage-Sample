@@ -5,6 +5,14 @@ $(document).ready(function(){
      $('.parallax').parallax();
      $('.modal').modal();
      $('.slider').slider({indicators: false, height: 500, transition: 800});
+     $('.button-collapse').sideNav({
+      menuWidth: 300,
+      edge: 'left',
+      closeOnClick: true,
+      draggable: true,
+        }
+      );
+
    });
 
 //######## PROJECTS HANDLEBARS ##########//
