@@ -182,8 +182,33 @@ a:hover{
   margin-bottom: 100px;
   #about-book-img{
     background-image: url('../images/K-Moore-With-Book.jpg');
-    height: 450px;
+    height: 500px;
     background-size: cover;
     background-position: center;
   }
+}
+
+//########STRATEGY#############//
+#strategy{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  .slider{
+    z-index:0;
+  }
+  #strategy-pane{
+    position: relative;
+    bottom: 80px;
+    background-color: white;
+    z-index: 1;
+    .row{
+      margin-top: 50px;
+    }
+    h6{
+      margin-bottom: 30px;
+    }
+  }
+  h4{
+    text-shadow: 1px 1px 4px rgba(8, 8, 8, 0.19);
+  }
+
 }

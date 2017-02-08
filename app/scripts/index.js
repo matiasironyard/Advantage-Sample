@@ -4,7 +4,7 @@ var Handlebars = require('Handlebars');
 $(document).ready(function(){
      $('.parallax').parallax();
      $('.modal').modal();
-     console.log();
+     $('.slider').slider({indicators: false, height: 500, transition: 800});
    });
 
 //######## PROJECTS HANDLEBARS ##########//
