@@ -5,6 +5,9 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 // Import Bootstrap
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 
+// Color Assignment
+$headings: #BB1E24;
+$white: #fff;
 
 *,
 *::before,
@@ -20,7 +23,7 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 .headings{
   font-family: 'Fjalla One', sans-serif;
   text-transform: uppercase;
-  color: #BB1E24;
+  color: $headings;
   text-shadow: 1px 1px 4px rgba(8, 8, 8, 0.19);
 }
 .row{
@@ -48,26 +51,36 @@ a:hover{
   text-decoration: none;
   font-weight: bold;
   cursor: pointer;
-  color: #BB1E24;
+  color: $headings;
+}
+#logo1{
+  color: $white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+#logo2{
+  color: $headings;
+  text-transform: uppercase;
+  font-family: 'Fjalla One', sans-serif;
 }
 
 //#########NAV###########//
 .nav-wrapper{
   background-color: #000;;
   a{
-    color: #fff;;
+    color: $white;
   }
   .brand-logo{
-    #logo1{
-      color: #fff;
-      font-family: 'Raleway', sans-serif;
-      font-size: 20px;
-    }
-    #logo2{
-      color: #BB1E24;
-      text-transform: uppercase;
-      font-family: 'Fjalla One', sans-serif;
-    }
+    // #logo1{
+    //   color: $white;
+    //   font-family: 'Raleway', sans-serif;
+    //   font-size: 20px;
+    // }
+    // #logo2{
+    //   color: $headings;
+    //   text-transform: uppercase;
+    //   font-family: 'Fjalla One', sans-serif;
+    // }
   }
 }
 //########PARALLAX############//
@@ -110,7 +123,7 @@ a:hover{
       text-shadow: 1px 1px 4px rgba(8, 8, 8, 0.19);
     }
     #middle-title{
-      color: #BB1E24;
+      color: $headings;
       font-weight: bold;
       text-transform: uppercase;
       font-size: 90px;
@@ -175,6 +188,9 @@ a:hover{
     }
   }
 }
+#review-modal{
+  padding-bottom: 50px;
+}
 
 //#########COME LOOK##########//
 #come-look{
@@ -182,16 +198,29 @@ a:hover{
   img{
     filter: contrast(.6) brightness(.5) blur(1px);
   }
+  .fa{
+    position: absolute;
+    text-align: center;
+    font-size: 60px;
+    bottom: -80px;
+  }
+  a{
+    color: $white;
+  }
+  a:hover{
+    color: $headings;
+  }
   #call-to-action{
     position: absolute;
-    bottom: 35%;
+    top: 35%;
     width: 100%;
     text-align: center;
     text-transform: uppercase;
-    color: #fff;
+    color: $white;
     font-family: 'Raleway', sans-serif;
     h2{
       text-align: center;
+      text-shadow: 1px 1px 4px rgba(8, 8, 8, 0.19);
     }
   }
 }
@@ -200,20 +229,27 @@ a:hover{
 #about-book{
   margin-top: 100px;
   margin-bottom: 100px;
+  position: relative;
   #about-book-img{
     background-image: url('../images/K-Moore-With-Book.jpg');
     height: 500px;
     background-size: cover;
     background-position: center;
+    box-shadow: 1px 2px 5px rgba(128, 128, 128, 0.85);
   }
   blockquote{
-    border-color: #BB1E24;
+    border-color: $headings;
+  }
+  h4{
+    position: absolute;
+    bottom: 40px;
+    color: $white;
   }
 }
 
 //########STRATEGY#############//
 #strategy{
-  margin-top: 100px;
+  margin-top: 80px;
   margin-bottom: -20px;
   .slider{
     z-index:0;
@@ -224,7 +260,7 @@ a:hover{
     background-color: white;
     z-index: 1;
     .row{
-      margin-top: 50px;
+      margin-top: 25px;
     }
     h6{
       margin-bottom: 30px;
@@ -262,6 +298,13 @@ a:hover{
     }
   }
 }
+//#########STRATEGY###########//
+#strategy{
+  h5{
+    border-bottom: 1px solid grey;
+    padding-bottom: 20px;
+  }
+}
 //#########FREE CHAPTER#######//
 #free-chapter{
   img{
@@ -270,10 +313,16 @@ a:hover{
 }
 
 //#########FOOTER############//
+#logo2{
+  font-size: 30px;
+}
+#logo1{
+  font-size: 30px;
+}
 #social-icons-footer{
   margin-top: 20px;
   .fa{
     font-size: 30px;
-    color: #fff;
+    color: $white;
   }
 }
