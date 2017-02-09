@@ -23,7 +23,29 @@ $(document).ready(function(){
       Materialize.scrollFire(options);
    });
 
+//###########VIDEO############//
+ $(document).ready(function(){
+   $('.fa-angle-down').click(function(){
+     $('#come-look').fadeOut(400);
+     $('#video').fadeIn(2000);
+   });
+ });
+
 //######## PROJECTS HANDLEBARS ##########//
 var source = $("#reviewsTemplate").html();
 var template = Handlebars.compile(source);
 $('#reviewsContainer').html(template(reviews));
+
+
+//######## PROJECTS HANDLEBARS ##########//
+
+// function isInView(elem){
+//    return $(elem).offset().top - $(window).scrollTop() < $(elem).height() ;
+// }
+// $(window).scroll(function(){
+//    if (isInView($('.video-container'))){
+//      $('nav').fadeOut(2000);
+//    } else if (!isInView($('.video-container'))){
+//      $('nav').fadeIn(2000);
+//    }
+// });
