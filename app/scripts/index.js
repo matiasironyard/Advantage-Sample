@@ -6,7 +6,7 @@ $(document).ready(function(){
     $('.scrollspy').scrollSpy();
      $('.parallax').parallax();
      $('.modal').modal();
-     $('.slider').slider({indicators: false, height: 500, transition: 800});
+     $('.slider').slider({indicators: false, height: 650, transition: 800});
      $('.button-collapse').sideNav({
       menuWidth: 300,
       edge: 'left',
