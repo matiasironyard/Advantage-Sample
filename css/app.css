@@ -5932,7 +5932,7 @@ a:hover {
     background-image: url("../images/K-Moore-With-Book.jpg");
     height: 600px;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     box-shadow: 1px 2px 5px rgba(128, 128, 128, 0.85); }
   #about-book blockquote {
     border-color: #BB1E24; }
@@ -5948,6 +5948,8 @@ a:hover {
   margin-bottom: -20px; }
   #strategy .slider {
     z-index: 0; }
+  #strategy #slides {
+    height: 600px; }
   #strategy #strategy-pane {
     position: relative;
     bottom: 80px;
@@ -5961,8 +5963,8 @@ a:hover {
     text-shadow: 1px 1px 4px rgba(8, 8, 8, 0.19); }
 
 #about-author {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   margin-bottom: 0;
   background-attachment: fixed;
   background-image: url("../images/MCG Headshots_parallax_4.jpeg");
