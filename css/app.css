@@ -5963,7 +5963,7 @@ a:hover {
 #about-author {
   padding-top: 50px;
   padding-bottom: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 0;
   background-attachment: fixed;
   background-image: url("../images/MCG Headshots_parallax_4.jpeg");
   background-size: cover;
@@ -5985,6 +5985,33 @@ a:hover {
 
 #free-chapter img {
   margin-bottom: 20px; }
+
+#connect {
+  margin-bottom: 50px; }
+  #connect #connect-left {
+    margin-top: 50px; }
+    #connect #connect-left #mooregrouplogo {
+      margin-bottom: 20px; }
+    #connect #connect-left #connect-call2action {
+      margin-top: 30px;
+      font-size: 20px;
+      font-weight: bold; }
+    #connect #connect-left #connect-social {
+      height: 100px; }
+      #connect #connect-left #connect-social .fa {
+        margin-top: 30px;
+        font-size: 30px;
+        color: #009DDC; }
+  #connect #connect-right img {
+    margin-top: 30px; }
+  #connect #connect-right #connect-social {
+    border-left: 5px solid #BB1E24;
+    margin-top: 30px;
+    height: 90px; }
+    #connect #connect-right #connect-social .fa {
+      margin-top: 30px;
+      font-size: 30px;
+      color: #BB1E24; }
 
 #logo2 {
   font-size: 30px; }
