@@ -15,9 +15,9 @@ $(document).ready(function(){
         }
       );
       var options = [
-        {selector: '#reviews', offset: 500, callback: function() {
-          $('#reviews').removeClass('hidden');
-          Materialize.fadeInImage('#reviews');
+        {selector: '#about-book', offset: 20, callback: function() {
+          // $('#about-book').removeClass('hidden');
+          Materialize.fadeInImage('#about-book');
         } },
       ];
       Materialize.scrollFire(options);

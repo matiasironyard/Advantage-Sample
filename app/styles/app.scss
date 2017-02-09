@@ -70,6 +70,16 @@ a:hover{
   a{
     color: $white;
   }
+  a:hover{
+    background-color: $headings;
+  }
+  #checkit{
+    color: $headings;
+  }
+  #checkit:hover{
+    color: $white;
+    font-weight: bold;
+  }
   .brand-logo{
     // #logo1{
     //   color: $white;
