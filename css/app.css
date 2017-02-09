@@ -5901,15 +5901,6 @@ a:hover {
   #come-look img {
     -webkit-filter: contrast(0.6) brightness(0.5) blur(1px);
             filter: contrast(0.6) brightness(0.5) blur(1px); }
-  #come-look .fa {
-    position: absolute;
-    text-align: center;
-    font-size: 60px;
-    bottom: -80px; }
-  #come-look a {
-    color: #fff; }
-  #come-look a:hover {
-    color: #BB1E24; }
   #come-look #call-to-action {
     position: absolute;
     top: 35%;
@@ -5921,23 +5912,36 @@ a:hover {
     #come-look #call-to-action h2 {
       text-align: center;
       text-shadow: 1px 1px 4px rgba(8, 8, 8, 0.19); }
+    #come-look #call-to-action .fa {
+      font-size: 60px; }
+    #come-look #call-to-action a {
+      color: #fff; }
+    #come-look #call-to-action a:hover {
+      color: #BB1E24; }
+
+#video {
+  display: none; }
 
 #about-book {
   margin-top: 100px;
   margin-bottom: 100px;
   position: relative; }
   #about-book #about-book-img {
+    position: relative;
+    bottom: 80px;
     background-image: url("../images/K-Moore-With-Book.jpg");
-    height: 500px;
+    height: 600px;
     background-size: cover;
     background-position: center;
     box-shadow: 1px 2px 5px rgba(128, 128, 128, 0.85); }
   #about-book blockquote {
     border-color: #BB1E24; }
   #about-book h4 {
-    position: absolute;
-    bottom: 40px;
-    color: #fff; }
+    position: relative;
+    top: 250px;
+    left: 20px;
+    color: #fff;
+    text-shadow: 0px 4px 6px black; }
 
 #strategy {
   margin-top: 80px;
