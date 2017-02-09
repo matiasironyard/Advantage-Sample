@@ -5792,18 +5792,27 @@ a:hover {
   cursor: pointer;
   color: #BB1E24; }
 
+#logo1 {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px; }
+
+#logo2 {
+  color: #BB1E24;
+  text-transform: uppercase;
+  font-family: 'Fjalla One', sans-serif; }
+
 .nav-wrapper {
   background-color: #000; }
   .nav-wrapper a {
     color: #fff; }
-  .nav-wrapper .brand-logo #logo1 {
+  .nav-wrapper a:hover {
+    background-color: #BB1E24; }
+  .nav-wrapper #checkit {
+    color: #BB1E24; }
+  .nav-wrapper #checkit:hover {
     color: #fff;
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px; }
-  .nav-wrapper .brand-logo #logo2 {
-    color: #BB1E24;
-    text-transform: uppercase;
-    font-family: 'Fjalla One', sans-serif; }
+    font-weight: bold; }
 
 #parallax {
   height: 650px;
@@ -5884,35 +5893,54 @@ a:hover {
       background-size: cover;
       background-repeat: none; }
 
+#review-modal {
+  padding-bottom: 50px; }
+
 #come-look {
   position: relative; }
   #come-look img {
     -webkit-filter: contrast(0.6) brightness(0.5) blur(1px);
             filter: contrast(0.6) brightness(0.5) blur(1px); }
+  #come-look .fa {
+    position: absolute;
+    text-align: center;
+    font-size: 60px;
+    bottom: -80px; }
+  #come-look a {
+    color: #fff; }
+  #come-look a:hover {
+    color: #BB1E24; }
   #come-look #call-to-action {
     position: absolute;
-    bottom: 35%;
+    top: 35%;
     width: 100%;
     text-align: center;
     text-transform: uppercase;
     color: #fff;
     font-family: 'Raleway', sans-serif; }
     #come-look #call-to-action h2 {
-      text-align: center; }
+      text-align: center;
+      text-shadow: 1px 1px 4px rgba(8, 8, 8, 0.19); }
 
 #about-book {
   margin-top: 100px;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  position: relative; }
   #about-book #about-book-img {
     background-image: url("../images/K-Moore-With-Book.jpg");
     height: 500px;
     background-size: cover;
-    background-position: center; }
+    background-position: center;
+    box-shadow: 1px 2px 5px rgba(128, 128, 128, 0.85); }
   #about-book blockquote {
     border-color: #BB1E24; }
+  #about-book h4 {
+    position: absolute;
+    bottom: 40px;
+    color: #fff; }
 
 #strategy {
-  margin-top: 100px;
+  margin-top: 80px;
   margin-bottom: -20px; }
   #strategy .slider {
     z-index: 0; }
@@ -5922,7 +5950,7 @@ a:hover {
     background-color: white;
     z-index: 1; }
     #strategy #strategy-pane .row {
-      margin-top: 50px; }
+      margin-top: 25px; }
     #strategy #strategy-pane h6 {
       margin-bottom: 30px; }
   #strategy h4 {
@@ -5947,8 +5975,18 @@ a:hover {
     #about-author #about-author-pane #about-author-small-pic {
       margin: 15px 15px 10px 0; }
 
+#strategy h5 {
+  border-bottom: 1px solid grey;
+  padding-bottom: 20px; }
+
 #free-chapter img {
   margin-bottom: 20px; }
+
+#logo2 {
+  font-size: 30px; }
+
+#logo1 {
+  font-size: 30px; }
 
 #social-icons-footer {
   margin-top: 20px; }
