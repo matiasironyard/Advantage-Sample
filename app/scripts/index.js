@@ -30,8 +30,8 @@ $(document).ready(function() {
 //###########VIDEO############//
 $(document).ready(function() {
   $('.fa-angle-down').click(function() {
-    $('#come-look').fadeOut(100);
-    $('#video').fadeIn(3000);
+    $('#come-look').fadeOut("fast");
+    $('#video').fadeIn(2000);
   });
 });
 //######## PROJECTS HANDLEBARS ##########//
