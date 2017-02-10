@@ -1,14 +1,10 @@
-
 // Bootstrap Variables
 $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
-
 // Import Bootstrap
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
-
 // Color Assignment
 $headings: #BB1E24;
 $white: #fff;
-
 *,
 *::before,
 *::after {
@@ -18,69 +14,73 @@ $white: #fff;
 // img {
 //   max-width: 100%;
 // }
-
 //#####GENERAL########//
-.headings{
+.headings {
   font-family: 'Fjalla One', sans-serif;
   text-transform: uppercase;
   color: $headings;
   text-shadow: 1px 1px 4px rgba(8, 8, 8, 0.19);
 }
-.row{
+
+.row {
   // margin-top: -20px;
   margin-bottom: -20px;
 }
 
-p{
+p {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
 }
 
-.primary-text{
+.primary-text {
   line-height: 2;
   opacity: .87;
   font-size: 120%;
 }
-.secondary-text{
+
+.secondary-text {
   line-height: 1.5;
   opacity: .54;
   font-size: 110%;
 }
 
-a:hover{
+a:hover {
   text-decoration: none;
   font-weight: bold;
   cursor: pointer;
   color: $headings;
 }
-#logo1{
+
+#logo1 {
   color: $white;
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
 }
-#logo2{
+
+#logo2 {
   color: $headings;
   text-transform: uppercase;
   font-family: 'Fjalla One', sans-serif;
 }
 
 //#########NAV###########//
-.nav-wrapper{
-  background-color: #000;;
-  a{
+.nav-wrapper {
+  background-color: #000;
+  ;
+  a {
     color: $white;
   }
-  a:hover{
+  a:hover {
     background-color: $headings;
   }
-  #checkit{
+  #checkit {
     color: $headings;
   }
-  #checkit:hover{
+  #checkit:hover {
     color: $white;
     font-weight: bold;
   }
-  .brand-logo{
+  .brand-logo {
     // #logo1{
     //   color: $white;
     //   font-family: 'Raleway', sans-serif;
@@ -93,11 +93,12 @@ a:hover{
     // }
   }
 }
+
 //########PARALLAX############//
-#parallax{
+#parallax {
   height: 650px;
   position: relative;
-  #header-title{
+  #header-title {
     position: absolute;
     bottom: 15%;
     // left: 60%;
@@ -106,17 +107,29 @@ a:hover{
     // animation: fadein 3s;
     -webkit-animation: 3s ease 0s normal forwards 1 fadein;
     animation: 3s ease 0s normal forwards 1 fadein;
-      @keyframes fadein{
-          0% { opacity:0; }
-          66% { opacity:0; }
-          100% { opacity:1; }
+    @keyframes fadein {
+      0% {
+        opacity: 0;
       }
-      @-webkit-keyframes fadein{
-          0% { opacity:0; }
-          66% { opacity:0; }
-          100% { opacity:1; }
+      66% {
+        opacity: 0;
       }
-    #top-title{
+      100% {
+        opacity: 1;
+      }
+    }
+    @-webkit-keyframes fadein {
+      0% {
+        opacity: 0;
+      }
+      66% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    #top-title {
       position: relative;
       top: 20px;
       color: white;
@@ -125,28 +138,28 @@ a:hover{
       font-family: 'Raleway', sans-serif;
       text-shadow: 1px 1px 4px rgba(8, 8, 8, 0.19);
     }
-    #middle-title{
+    #middle-title {
       color: $headings;
       font-weight: bold;
       text-transform: uppercase;
       font-size: 90px;
       font-family: 'Fjalla One', sans-serif;
     }
-    #subtitles{
+    #subtitles {
       position: relative;
       bottom: 20px;
       font-family: 'Raleway', sans-serif;
       z-index: 0;
-      #bottom-title1{
+      #bottom-title1 {
         color: white;
         font-size: 25px;
       }
-      #bottom-title2{
+      #bottom-title2 {
         color: white;
         font-size: 20px;
       }
     }
-    #signature{
+    #signature {
       position: relative;
       bottom: 90px;
       z-index: 1;
@@ -155,34 +168,34 @@ a:hover{
 }
 
 //##########REVIEWS############//
-#reviews{
+#reviews {
   margin-top: 50px;
   margin-bottom: 50px;
-  #reviews-pane{
+  #reviews-pane {
     background-color: rgb(251, 251, 251);
-    a{
+    a {
       color: #000;
     }
-    p{
+    p {
       text-align: center;
     }
-    .fa{
+    .fa {
       font-size: 35px;
       color: rgba(187, 30, 36, 0.75);
       position: relative;
       bottom: 15px;
       text-shadow: 1px 1px 4px rgba(8, 8, 8, 0.19);
     }
-    #review-snippet{
+    #review-snippet {
       text-align: center;
     }
-    .reviewer{
+    .reviewer {
       font-weight: bold;
       text-align: right;
     }
-    #book-img{
-      img{
-        height:500px;
+    #book-img {
+      img {
+        height: 500px;
         width: 300px;
         // background-image: url('../images/book.png');
         background-size: cover;
@@ -191,18 +204,19 @@ a:hover{
     }
   }
 }
-#review-modal{
+
+#review-modal {
   padding-bottom: 50px;
 }
 
 //#########COME LOOK##########//
-#come-look{
+#come-look {
   position: relative;
   height: 600px;
-  img{
+  img {
     filter: brightness(1.5) blur(6px);
   }
-  #call-to-action{
+  #call-to-action {
     position: absolute;
     top: 35%;
     width: 100%;
@@ -210,38 +224,40 @@ a:hover{
     text-transform: uppercase;
     color: $white;
     font-family: 'Raleway', sans-serif;
-    h2{
+    h2 {
       text-align: center;
       text-shadow: 1px 1px 4px rgba(8, 8, 8, 0.19);
     }
-    .fa{
+    .fa {
       // position: absolute;
       // text-align: center;
       font-size: 60px;
       // bottom: -80px;
     }
-    a{
+    a {
       color: $white;
     }
-    a:hover{
+    a:hover {
       color: $headings;
     }
   }
 }
+
 //########VIDEO###########//
-#video{
+#video {
   display: none;
-  .video-container{
+  .video-container {
     // padding: 300px;
     // width: 100%;
   }
 }
+
 //########ABOUT BOOK###########//
-#about-book{
+#about-book {
   margin-top: 100px;
   margin-bottom: 100px;
   position: relative;
-  #about-book-img{
+  #about-book-img {
     position: relative;
     bottom: 80px;
     background-image: url('../images/K-Moore-With-Book.jpg');
@@ -250,10 +266,10 @@ a:hover{
     background-position: top;
     box-shadow: 1px 2px 5px rgba(128, 128, 128, 0.85);
   }
-  blockquote{
+  blockquote {
     border-color: $headings;
   }
-  h4{
+  h4 {
     position: relative;
     top: 250px;
     left: 20px;
@@ -263,33 +279,33 @@ a:hover{
 }
 
 //########STRATEGY#############//
-#strategy{
+#strategy {
   margin-top: 80px;
-  .slider{
-    z-index:0;
+  .slider {
+    z-index: 0;
   }
-  #slides{
+  #slides {
     height: 600px;
   }
-  #strategy-pane{
+  #strategy-pane {
     position: relative;
     bottom: 80px;
     background-color: white;
     z-index: 1;
-    .row{
+    .row {
       margin-top: 25px;
     }
-    h6{
+    h6 {
       margin-bottom: 30px;
     }
   }
-  h4{
+  h4 {
     text-shadow: 1px 1px 4px rgba(8, 8, 8, 0.19);
   }
 }
 
 //######ABOUT AUTHOR##########//
-#about-author{
+#about-author {
   // height: 600px;
   padding-top: 80px;
   padding-bottom: 80px;
@@ -298,82 +314,85 @@ a:hover{
   background-image: url('../images/MCG Headshots_parallax_4.jpeg');
   background-size: cover;
   background-position: right;
-  @media only screen and (min-width:321px) and (max-width:600px){
+  @media only screen and (min-width: 321px) and (max-width: 600px) {
     background-image: none;
   }
   // @media screen and (max-width:641px){
   //   height: 100px;
   // }
-  #about-author-pane{
+  #about-author-pane {
     position: relative;
     top: 25%;
-    h3{
+    h3 {
       margin-bottom: 40px;
     }
-    #about-author-small-pic{
+    #about-author-small-pic {
       margin: 15px 15px 10px 0;
     }
   }
 }
+
 //#########STRATEGY###########//
-#strategy{
-  h5{
+#strategy {
+  h5 {
     border-bottom: 1px solid grey;
     padding-bottom: 20px;
   }
 }
+
 //#########FREE CHAPTER#######//
-#free-chapter{
+#free-chapter {
   margin-top: 50px;
-  img{
+  img {
     margin-bottom: 20px;
   }
 }
+
 //#########Connect#############//
-#connect{
+#connect {
   margin-top: 50px;
   margin-bottom: 50px;
   padding-top: 30px;
   padding-bottom: 30px;
   background-image: url('../images/table-group.jpg');
   background-size: cover;
-  #connect-left{
+  #connect-left {
     margin-top: 50px;
-    #mooregrouplogo{
+    #mooregrouplogo {
       margin-bottom: 20px;
     }
-    #connect-logo{
+    #connect-logo {
       position: relative;
       bottom: 10px;
       margin-right: 10px;
     }
-    #connect-call2action{
+    #connect-call2action {
       margin-top: 30px;
       font-size: 20px;
       font-weight: bold;
     }
-    #connect-social{
+    #connect-social {
       height: 100px;
-      .fa{
+      .fa {
         margin-top: 30px;
         font-size: 30px;
         color: $headings;
       }
     }
   }
-  #connect-right{
-    img{
+  #connect-right {
+    img {
       margin-top: 30px;
     }
-    #services{
+    #services {
       position: relative;
       bottom: 30px;
     }
-    #connect-social{
+    #connect-social {
       border-left: 5px solid #009DDC;
       margin-top: 30px;
       height: 90px;
-      .fa{
+      .fa {
         margin-top: 30px;
         font-size: 30px;
         color: #009DDC;
@@ -383,15 +402,17 @@ a:hover{
 }
 
 //#########FOOTER############//
-#logo2{
+#logo2 {
   font-size: 30px;
 }
-#logo1{
+
+#logo1 {
   font-size: 30px;
 }
-#social-icons-footer{
+
+#social-icons-footer {
   margin-top: 20px;
-  .fa{
+  .fa {
     font-size: 30px;
     color: $white;
   }
