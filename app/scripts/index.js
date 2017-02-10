@@ -26,8 +26,8 @@ $(document).ready(function(){
 //###########VIDEO############//
  $(document).ready(function(){
    $('.fa-angle-down').click(function(){
-     $('#come-look').fadeOut(400);
-     $('#video').fadeIn(2000);
+     $('#come-look').fadeOut(100);
+     $('#video').fadeIn(3000);
    });
  });
 
