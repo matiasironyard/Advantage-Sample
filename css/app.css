@@ -5997,6 +5997,9 @@ a:hover {
   padding-bottom: 30px;
   background-image: url("../images/table-group.jpg");
   background-size: cover; }
+  #connect co {
+    font-weight: bold;
+    color: green; }
   #connect #connect-left {
     margin-top: 50px; }
     #connect #connect-left #mooregrouplogo {
