@@ -5897,10 +5897,11 @@ a:hover {
   padding-bottom: 50px; }
 
 #come-look {
-  position: relative; }
+  position: relative;
+  height: 600px; }
   #come-look img {
-    -webkit-filter: contrast(0.6) brightness(0.5) blur(1px);
-            filter: contrast(0.6) brightness(0.5) blur(1px); }
+    -webkit-filter: brightness(1.5) blur(6px);
+            filter: brightness(1.5) blur(6px); }
   #come-look #call-to-action {
     position: absolute;
     top: 35%;
@@ -5921,6 +5922,8 @@ a:hover {
 
 #video {
   display: none; }
+  #video .video-container {
+    padding: 300px; }
 
 #about-book {
   margin-top: 100px;
@@ -5944,8 +5947,7 @@ a:hover {
     text-shadow: 0px 4px 6px black; }
 
 #strategy {
-  margin-top: 80px;
-  margin-bottom: -20px; }
+  margin-top: 80px; }
   #strategy .slider {
     z-index: 0; }
   #strategy #slides {
@@ -5985,15 +5987,22 @@ a:hover {
   border-bottom: 1px solid grey;
   padding-bottom: 20px; }
 
-#free-chapter img {
-  margin-bottom: 20px; }
+#free-chapter {
+  margin-top: 50px; }
+  #free-chapter img {
+    margin-bottom: 20px; }
 
 #connect {
+  margin-top: 50px;
   margin-bottom: 50px; }
   #connect #connect-left {
     margin-top: 50px; }
     #connect #connect-left #mooregrouplogo {
       margin-bottom: 20px; }
+    #connect #connect-left #connect-logo {
+      position: relative;
+      bottom: 10px;
+      margin-right: 10px; }
     #connect #connect-left #connect-call2action {
       margin-top: 30px;
       font-size: 20px;
@@ -6003,9 +6012,12 @@ a:hover {
       #connect #connect-left #connect-social .fa {
         margin-top: 30px;
         font-size: 30px;
-        color: #009DDC; }
+        color: #BB1E24; }
   #connect #connect-right img {
     margin-top: 30px; }
+  #connect #connect-right #services {
+    position: relative;
+    bottom: 30px; }
   #connect #connect-right #connect-social {
     border-left: 5px solid #BB1E24;
     margin-top: 30px;
