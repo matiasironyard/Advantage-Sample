@@ -6033,10 +6033,6 @@ a:hover {
     margin-top: 50px; }
     #connect #connect-left #mooregrouplogo {
       margin-bottom: 20px; }
-    #connect #connect-left #connect-logo {
-      position: relative;
-      bottom: 10px;
-      margin-right: 10px; }
     #connect #connect-left #connect-call2action {
       margin-top: 30px;
       font-size: 20px;
@@ -6072,4 +6068,5 @@ a:hover {
   #social-icons-footer .fa {
     font-size: 30px;
     color: #fff; }
+
 /*# sourceMappingURL=app.css.map */
